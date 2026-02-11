@@ -1,0 +1,11 @@
+- id: no-console-log
+  language: javascript
+  severity: warning
+  message: "Remove console.log before committing"
+  pattern: "console.log("
+
+- id: no-innerhtml
+  language: javascript
+  severity: error
+  message: "innerHTML is an XSS risk, use textContent instead"
+  pattern: ".innerHTML"

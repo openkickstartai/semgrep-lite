@@ -1,0 +1,17 @@
+- id: no-eval
+  language: python
+  severity: error
+  message: "Do not use eval() - executes arbitrary code"
+  pattern: "eval("
+
+- id: no-exec
+  language: python
+  severity: error
+  message: "Do not use exec() - executes arbitrary code"
+  pattern: "exec("
+
+- id: no-pickle-loads
+  language: python
+  severity: warning
+  message: "pickle.loads is unsafe with untrusted data"
+  pattern: "pickle.loads"
